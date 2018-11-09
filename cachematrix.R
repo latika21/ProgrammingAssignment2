@@ -1,3 +1,7 @@
+## Put comments here that give an overall description of what your
+## functions do
+## The following functions cache the inverse of a matrix to save computational power were possible
+## Write a short comment describing this function
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y)
@@ -10,6 +14,9 @@ makeCacheMatrix <- function(x = matrix()) {
   getinverse <- function() m
   list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
+## Write a short comment describing this function
+## Cachesolve calculates the inverse of the special matrix if it doesn't exsists. 
+## If the inverse already exsist then retrieve it without computing
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   m <- x$getinverse()
